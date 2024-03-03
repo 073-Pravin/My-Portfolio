@@ -10,7 +10,7 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className="w-full h-auto bg-bodyColor text-lightText ">
-      <div className="max-w-screen mx-10 ">
+      <div className="max-w-screen mx-2 ">
       <Navbar/>
       <Banner/>
       <Features/>
