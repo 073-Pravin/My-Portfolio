@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
 import FooterBottom from './FooterBottom';
 import SocialMedia from '../socialMedia/SocialMedia';

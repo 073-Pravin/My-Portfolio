@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ResumeCard from "./ResumeCard";
+// import ResumeCard from "./ResumeCard";
 
 const Achievement = () => {
   return (
@@ -11,10 +11,10 @@ const Achievement = () => {
     >
       <div>
         <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2007 - 2010</p>
+          <p className="text-sm text-designColor tracking-[4px]">write session</p>
           <h2 className="text-4xl font-bold">Company Experience</h2>
         </div>
-        <div className="mt-6 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        {/* <div className="mt-6 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Lorem ipsum dolor sit amet."
             subTitle="Lorem ipsum dolor sit amet alternative."
@@ -67,7 +67,7 @@ const Achievement = () => {
             des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
           />
           
-        </div>
+        </div> */}
       </div>
       
     </motion.div>

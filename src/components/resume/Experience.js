@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion"
-import ResumeCard from "./ResumeCard";
+import CertificateCard from "./CertificateCard";
 
 const Experience = () => {
   return (
@@ -15,41 +15,36 @@ const Experience = () => {
           <h2 className="text-4xl font-bold">Certifications</h2>
         </div>
         <div className="mt-14 w-auto h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-        <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+        <CertificateCard
+            title="Problem Solving (Basic)"
+            organization="HackerRank"
+            issuedDate={"Jan 2024"}
+            url="https://www.hackerrank.com/certificates/63c72c9ee5e6"
+            />
+          <CertificateCard
+            title="Python (Basic)"
+            organization="HackerRank"
+            issuedDate={"Jan 2024"}
+            url="https://www.hackerrank.com/certificates/27f0f6c29a0b"
           />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+          <CertificateCard
+            title="JavaScript Bootcamp"
+            organization="Lets Upgrade"
+            issuedDate={"11 Sep 2022"}
+            url="/documents/javaScript_Bootcamp.pdf"
           />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+          <CertificateCard
+            title="Cyber Security and Ethical
+            Hacking Workshop"
+            organization="IEEE Student Branch Chapter, NIT Tiruchirappalli"
+            issuedDate={"17 Aug 2023"}
+            url="/documents/CyberSecurity_workshop.pdf"
           />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
-          />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
-          />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
+          <CertificateCard
+            title="AI Tools Workshop"
+            organization="be10x"
+            issuedDate={"14 Jan 2024"}
+            url="/documents/AI_tools_workshop.pdf"
           />
         </div>
       </div>

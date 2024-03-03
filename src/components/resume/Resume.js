@@ -1,25 +1,38 @@
-import React, {  useState } from 'react'
-import Title from '../layouts/Title';
-import Education from './Education';
-import Skills from './Skills';
-import Achievements from './Achievements';
-import Experience from "./Experience"
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import Education from "./Education";
+import Skills from "./Skills";
+import Achievements from "./Achievements";
+import Experience from "./Experience";
 
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.download = "Pravin-resume";
+
+  link.href = "/documents/Resume.pdf";
+
+  link.click();
+};
 const Resume = () => {
-   const [educationData, setEducationData] = useState(true);
-   const [skillData, setSkillData] = useState(false);
-   const [experienceData, setExperienceData] = useState(false);
-   const [achievementData, setAchievementData] = useState(false);
+  const [educationData, setEducationData] = useState(true);
+  const [skillData, setSkillData] = useState(false);
+  const [experienceData, setExperienceData] = useState(false);
+  const [achievementData, setAchievementData] = useState(false);
   return (
     <section
       id="resume"
       className="w-full py-20 border-b-[1px] border-b-gray-600 "
     >
-      <div className="flex justify-center items-center text-center">
-        <Title
-          title="Have A Look It Took Just 10 Sec"
-          des="My Resume"
-        />
+      <div className="flex flex-row justify-center gap-10">
+        <div className="flex justify-center items-center text-center gap-10">
+          <Title title="Have A Look It Took Just 10 Sec" des="My Resume" />
+          <button
+            className=" bg-transparent border rounded-md p-2 text-[#ff014f] border-designColor hover:text-[#fff] hover:border-white hover:shadow-white-700"
+            onClick={handleDownload}
+          >
+            Download Resume
+          </button>
+        </div>
       </div>
 
       <div>
@@ -84,13 +97,14 @@ const Resume = () => {
           </li>
         </ul>
       </div>
-      {educationData && <Education />}
-      {skillData && <Skills />}
-      {achievementData && <Achievements />}
-      {experienceData && <Experience />}
- 
-      </section>
-  )
-}
+      <div className="flex flex-col justify-center items-center">
+        {educationData && <Education />}
+        {skillData && <Skills />}
+        {achievementData && <Achievements />}
+        {experienceData && <Experience />}
+      </div>
+    </section>
+  );
+};
 
-export default Resume
+export default Resume;

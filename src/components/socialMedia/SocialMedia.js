@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 
 const openFacebookProfile = () => {
   window.open("https://www.facebook.com/profile.php?id=100005805347801");
@@ -12,6 +13,10 @@ const openInstagramProfile = () => {
 const openLinkedInProfile = () => {
   window.open("https://www.linkedin.com/in/pravin-pilodiya-998909255");
 };
+const openGithubProfile = () => {
+  window.open("https://github.com/073-Pravin");
+};
+
 
 const SocialMedia = () => {
   return (
@@ -26,6 +31,9 @@ const SocialMedia = () => {
 
       <span className="bannerIcon" onClick={openLinkedInProfile}>
         <FaLinkedinIn />
+      </span>
+      <span className="bannerIcon" onClick={openGithubProfile}>
+      <SiGithub/>
       </span>
     </div>
   );
