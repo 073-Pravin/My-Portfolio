@@ -20,7 +20,7 @@ const openGithubProfile = () => {
 
 const SocialMedia = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 flex-wrap justify-center">
       <span className="bannerIcon" onClick={openFacebookProfile}>
         <FaFacebookF />
       </span>
