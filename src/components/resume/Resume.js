@@ -24,10 +24,10 @@ const Resume = () => {
       className="w-full py-20 border-b-[1px] border-b-gray-600 "
     >
       <div className="flex flex-row justify-center gap-10">
-        <div className="flex xs:flex-col justify-center items-center text-center gap-10 xs:gap-1 xs:my-5">
+        <div className="flex sm:flex-col justify-center items-center text-center gap-10 sm:gap-1 sm:my-5">
           <Title title="Have A Look It Took Just 10 Sec" des="My Resume" />
           <button
-            className=" flex bg-transparent border rounded-md p-2 text-[#ff014f] border-designColor hover:text-[#fff] hover:border-white hover:shadow-white-700 xs:text-sm"
+            className=" flex bg-transparent border rounded-md p-2 text-[#ff014f] border-designColor hover:text-[#fff] hover:border-white hover:shadow-white-700 sm:text-sm"
             onClick={handleDownload}
           >
             Download Resume
