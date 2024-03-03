@@ -1,17 +1,21 @@
-import React from 'react'
-import {logo} from "../../assets/index"
-import FooterBottom from './FooterBottom';
-import SocialMedia from '../socialMedia/SocialMedia';
+import React from "react";
+import { logo } from "../../assets/index";
+import FooterBottom from "./FooterBottom";
+import SocialMedia from "../socialMedia/SocialMedia";
 
 const Footer = () => {
   return (
-    <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
+    <div className="w-full flex flex-row justify-center items-center py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8 items-center">
-        <img className="w-42 border-white rounded-[50%] border-2" src={logo} alt="logo" />
-        <SocialMedia/>
-        <FooterBottom/>
+        <img
+          className="w-42 border-white rounded-[50%] border-2"
+          src={logo}
+          alt="logo"
+        />
+        <SocialMedia /> 
+        <FooterBottom />
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-full flex flex-col items-center">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
           Quick Link
         </h3>
@@ -48,7 +52,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-full flex flex-col items-center">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
           RESOURCES
         </h3>
@@ -85,7 +89,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-full flex flex-col items-center">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
           DEVELOPERS
         </h3>
@@ -124,6 +128,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
