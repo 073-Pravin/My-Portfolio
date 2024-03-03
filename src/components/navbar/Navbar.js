@@ -50,7 +50,7 @@ const Navbar = () => {
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[100%] h-screen overflow-auto absolute top-0 left-0 bg-gray-900 p-4  z-10 border border-4 border-designColor">
+          <div className="w-[100%] h-screen overflow-auto absolute top-0 left-0 bg-gray-900 p-4  z-10 border-4 border-designColor">
             <div className="flex flex-col gap-8 py-2 relative ">
               <div className="flex flex-col items-center">
                 <img
@@ -68,7 +68,7 @@ const Navbar = () => {
                 {navLinksdata.map((item) => (
                   <li
                     key={item._id}
-                    className="  bg-transparent border rounded-md p-2 text-designColor border-designColor hover:text-[#fff] hover:border-white hover:shadow-white-700"
+                    className=" bg-transparent border rounded-md p-2 cursor-pointer text-designColor border-designColor hover:text-[#fff] hover:border-white hover:shadow-white-700"
                   >
                     <Link
                       onClick={() => setShowMenu(false)}
