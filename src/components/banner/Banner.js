@@ -1,24 +1,29 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiNodedotjs, SiMongodb, SiExpress } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNodedotjs,
+  SiMongodb,
+  SiExpress,
+} from "react-icons/si";
 import { bannerImg } from "../../assets/index";
 import SocialMedia from "../socialMedia/SocialMedia";
 const Banner = () => {
   const [text] = useTypewriter({
-    words: ["Programmer.", "Full Stack Developer."], 
-    loop: true, 
-    typeSpeed: 20, 
+    words: ["Programmer.", "Full Stack Developer."],
+    loop: true,
+    typeSpeed: 20,
     deleteSpeed: 10,
     delaySpeed: 2000,
-  }); 
+  });
 
   return (
     <section
       id="home"
       className="w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center font-titleFont  border-b-[1px] border-b-gray-600 "
     >
-      <div className="w-full lgl:w-1/2 flex flex-col gap-20">
+      <div className="w-full lgl:w-2/3 flex flex-col gap-20">
         <div className="flex flex-col gap-5">
           <h4 className=" text-lg font-normal tracking-wide font-titleFont text-gray-400 ">
             Welcome To My World
@@ -35,14 +40,27 @@ const Banner = () => {
               cursorColor="#ff014f"
             />
           </h2>
-          <p className="text-base font-bodyFont leading-6 tracking-wide">
+          {/* <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
+            Experienced Full Stack Developer passionate about building
+            innovative web solutions that make a difference. With a solid
+            foundation in frontend technologies like HTML, CSS, and JavaScript,
+            paired with backend proficiency in Node.js, Express.js, and MongoDB,
+            I bring a comprehensive skill set to the table. From
+            conceptualization to deployment, I thrive on turning ideas into
+            reality, crafting user-friendly interfaces and scalable
+            architectures. With a knack for problem-solving and a commitment to
+            staying updated with the latest technologies, I am eager to tackle
+            new challenges and contribute to impactful projects. Let's connect
+            and collaborate on creating something extraordinary!
+          </p> */}
+          <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
             Hello, I'm Pravin Pilodiya, a dedicated tech enthusiast currently
             pursuing my Master's in Computer Applications (MCA) at NIT Trichy.
             My journey in the world of technology began with my Bachelor of
             Science with Computer Science (B.Sc.) at Government Holkar Science
             College in Indore, Madhya Pradesh.
           </p>
-          <p className="text-base font-bodyFont leading-6 tracking-wide">
+          <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
             During my B.Sc. program at a government institution, I laid a solid
             foundation in computer science and technology, which fueled my
             passion for software development. Now, as I work toward my MCA, I'm
@@ -51,7 +69,7 @@ const Banner = () => {
             continue my journey in the software industry and make a meaningful
             impact through my technical expertise and creativity.
           </p>
-          <p className="text-base font-bodyFont leading-6 tracking-wide">
+          <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
             Let's connect and explore opportunities for collaboration and growth
             in the ever-evolving tech world.
           </p>
@@ -64,9 +82,7 @@ const Banner = () => {
             </h2>
             <SocialMedia />
           </div>
-          <div className="bg-designColor w-2 h-100% z-5 sm:disabled:">
-          
-          </div>
+          <div className="bg-designColor w-2 h-100% z-5 sm:disabled:"></div>
           <div className="lgl:w-2/3">
             <h2 className="text-base uppercase font-titleFont mb-4">
               BEST SKILL ON
@@ -76,7 +92,7 @@ const Banner = () => {
                 <SiMongodb />
               </span>
               <span className="bannerIcon">
-                <SiExpress/>
+                <SiExpress />
               </span>
               <span className="bannerIcon">
                 <FaReact />

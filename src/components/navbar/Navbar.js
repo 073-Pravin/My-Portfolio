@@ -64,7 +64,7 @@ const Navbar = () => {
                   exercitationem distinctio aliquid nam.
                 </p>
               </div>
-              <ul className="flex flex-wrap gap-[50px] justify-center ">
+              <ul className="flex flex-wrap gap-[10px] justify-center ">
                 {navLinksdata.map((item) => (
                   <li
                     key={item._id}

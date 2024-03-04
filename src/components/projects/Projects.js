@@ -18,20 +18,17 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
           title="Mithai Cart - Ecommerce Web App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des="An intuitive and efficient online platform for ordering sweets and namkeens, this full-stack web application, built with the MERN stack, offers seamless user authentication and ordering processes. Users can easily navigate through various categories of sweets and namkeens, while an admin panel allows for effortless management of product listings, order reception, and order maintenance. With essential features in place, this application provides a hassle-free experience for both customers and administrators alike."
           src={projectOne}
         />
         <ProjectsCard
           title="Portfolio-Web App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des="My portfolio website, developed with HTML, CSS, JavaScript, ReactJs, and Bootstrap, offers a seamless browsing experience for visitors. Organized with intuitive navigation, it showcases my diverse projects across web development and design domains. With a focus on user-friendly design, accessibility, and highlighting my expertise, the website aims to leave a lasting impression and facilitate connections for potential collaborations."
           src={projectTwo}
         />
         <ProjectsCard
           title="Whispers from the world - News Web App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des="Offering users a seamless news browsing experience, this front-end web application utilizes HTML, CSS, JavaScript, ReactJs, and Bootstrap to present dynamically sourced headlines across various topics like sports, health, business, and entertainment. The project intelligently categorizes news sections, accessible through an intuitive navbar, ensuring effortless navigation and exploration of up-to-date information."
           src={projectThree}
         />
      
