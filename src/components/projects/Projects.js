@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo, projectThree,projectFour } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -20,16 +20,29 @@ const Projects = () => {
           title="Mithai Cart - Ecommerce Web App"
           des="An intuitive and efficient online platform for ordering sweets and namkeens, this full-stack web application, built with the MERN stack, offers seamless user authentication and ordering processes. Users can easily navigate through various categories of sweets and namkeens, while an admin panel allows for effortless management of product listings, order reception, and order maintenance. With essential features in place, this application provides a hassle-free experience for both customers and administrators alike."
           src={projectOne}
+          gitUrl="#"
+          webUrl="#"
+        />
+        <ProjectsCard
+          title="Employee Management Web Application"
+          des="This Employee Management Application is a web-based system built using the Express, Node.js, and React.js and file system. It provides functionalities for managing employee records, calculating average salaries."
+          src={projectTwo}
+          gitUrl="https://github.com/073-Pravin/Employee-Management-application/tree/main"
+          webUrl="https://employee-management-application.onrender.com/"
         />
         <ProjectsCard
           title="Portfolio-Web App"
           des="My portfolio website, developed with HTML, CSS, JavaScript, ReactJs, and Bootstrap, offers a seamless browsing experience for visitors. Organized with intuitive navigation, it showcases my diverse projects across web development and design domains. With a focus on user-friendly design, accessibility, and highlighting my expertise, the website aims to leave a lasting impression and facilitate connections for potential collaborations."
-          src={projectTwo}
+          src={projectThree}
+          gitUrl="https://github.com/073-Pravin/My-Portfolio"
+          webUrl="https://my-portfolio-sigma-lovat-15.vercel.app/"
         />
         <ProjectsCard
           title="Whispers from the world - News Web App"
           des="Offering users a seamless news browsing experience, this front-end web application utilizes HTML, CSS, JavaScript, ReactJs, and Bootstrap to present dynamically sourced headlines across various topics like sports, health, business, and entertainment. The project intelligently categorizes news sections, accessible through an intuitive navbar, ensuring effortless navigation and exploration of up-to-date information."
-          src={projectThree}
+          src={projectFour}
+          gitUrl="https://github.com/073-Pravin/Whispers-from-the-World"
+          webUrl="#"
         />
      
       </div>
