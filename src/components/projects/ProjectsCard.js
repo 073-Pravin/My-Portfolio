@@ -1,7 +1,6 @@
-import React from "react";
+import React ,{Link} from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
-import { Link } from "react-scroll";
 const ProjectsCard = ({ title, des, src, gitUrl, webUrl }) => {
   const gitOpen =()=>{
     window.open(`${gitUrl}`);
@@ -25,6 +24,7 @@ const ProjectsCard = ({ title, des, src, gitUrl, webUrl }) => {
           </h3>
           <div className="flex gap-2">
             <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
+              {/* <Link to={gitUrl}><BsGithub/></Link> */}
               <BsGithub onClick={gitOpen} />
             </span>
             <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">

@@ -20,8 +20,8 @@ const Projects = () => {
           title="Mithai Cart - Ecommerce Web App"
           des="An intuitive and efficient online platform for ordering sweets and namkeens, this full-stack web application, built with the MERN stack, offers seamless user authentication and ordering processes. Users can easily navigate through various categories of sweets and namkeens, while an admin panel allows for effortless management of product listings, order reception, and order maintenance. With essential features in place, this application provides a hassle-free experience for both customers and administrators alike."
           src={projectOne}
-          gitUrl="#"
-          webUrl="#"
+          gitUrl="https://github.com/073-Pravin/mithaicart"
+          webUrl="https://mithaicart-theta.vercel.app/"
         />
         <ProjectsCard
           title="Employee Management Web Application"
@@ -42,7 +42,7 @@ const Projects = () => {
           des="Offering users a seamless news browsing experience, this front-end web application utilizes HTML, CSS, JavaScript, ReactJs, and Bootstrap to present dynamically sourced headlines across various topics like sports, health, business, and entertainment. The project intelligently categorizes news sections, accessible through an intuitive navbar, ensuring effortless navigation and exploration of up-to-date information."
           src={projectFour}
           gitUrl="https://github.com/073-Pravin/Whispers-from-the-World"
-          webUrl="#"
+          webUrl="https://whispers-from-the-world-dn2j.vercel.app/"
         />
      
       </div>
